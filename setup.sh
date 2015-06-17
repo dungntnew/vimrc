@@ -32,7 +32,7 @@ fi
 
 # install gundo.vim
 if [ ! -d ~/.vim/bundle/gundo.vim ]; then
-  if [ -x "$(command -v hg)"]; then
+  if [ -x "$(command -v hg)" ]; then
     cd ~/.vim/bundle && hg clone http://bitbucket.org/sjl/gundo.vim
   else
     cd ~/.vim/bundle && git clone http://github.com/sjl/gundo.vim.git
@@ -61,7 +61,7 @@ fi
 # replace rpm package with other linux platform if not is centos 6
 if [ ! -x "$(command -v ag)" ]; then
 	echo "[start install silver searcher command]"
-	if [[ `uname` =='Darwin' ]]; then
+	if [ `uname` =='Darwin' ]; then
 		brew install the_silver_searcher
 	else
 		sudo rpm -ivh http://swiftsignal.com/packages/centos/6/x86_64/the-silver-searcher-0.13.1-1.el6.x86_64.rpm
