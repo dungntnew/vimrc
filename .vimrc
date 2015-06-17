@@ -72,7 +72,7 @@ xnoremap il :<c-u>call <SID>NextTextObject('i', 'F')<cr>
 " Leader Shortcuts {{{
 let mapleader=","
 nnoremap <leader>m :silent make\|redraw!\|cw<CR>   " redaw screen
-nnoremap <leader>w :NERDTree<CR>                   " open nerd tree
+nnoremap <leader>w :NERDTreeToggle<CR>             " toggle open nerd tree
 nnoremap <leader>u :GundoToggle<CR>                " toggle g-undo 
 nnoremap <leader>h :A<CR>                          " undefined
 nnoremap <leader>ev :vsp $MYVIMRC<CR>              " edit .vimrc
@@ -141,7 +141,8 @@ let g:ctrlp_custom_ignore = '\vbuild/|dist/|venv/|target/|\.(o|swp|pyc|egg)$'
 
 " NERDTree {{{
 let NERDTreeIgnore = ['\.pyc$', 'build', 'venv', 'egg', 'egg-info/', 'dist', 'docs']
-" }}}
+"  }}}
+"
 " Syntastic {{{
 let g:syntastic_python_flake8_args='--ignore=E501'
 let g:syntastic_ignore_files = ['.java$']
