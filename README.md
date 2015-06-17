@@ -1,5 +1,6 @@
 vimrc
 =====
+![Preview](https://raw.github.com/dungntnew/vimrc/master/preview.png?raw=true "Editing..")
 
 ## Installation
 
