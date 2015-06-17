@@ -32,7 +32,11 @@ fi
 
 # install gundo.vim
 if [ ! -d ~/.vim/bundle/gundo.vim ]; then
-	cd ~/.vim/bundle && git clone http://github.com/sjl/gundo.vim.git
+  if [ -x "$(command -v hg)"]; then
+    cd ~/.vim/bundle && hg clone http://bitbucket.org/sjl/gundo.vim
+  else
+    cd ~/.vim/bundle && git clone http://github.com/sjl/gundo.vim.git
+  fi
 	echo "[successfully installed] ~/.vim/bundle/gundo.vim"
 else
 	echo "[already installed] ~/.vim/bundle/gundo.vim "
@@ -110,3 +114,4 @@ echo "			INSTALL VIMRC	-	END	-						"
 echo "----------------------------------------------------------"
 echo "run: ln -s path_to_vimrc_src ~/.vimrc to link vimrc file  "
 echo "run: rm -rf ~/.vimrc to remove old vimrc file before link "
+
