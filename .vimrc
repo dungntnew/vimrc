@@ -1,10 +1,19 @@
 " file name: .vimrc
 " author   : dungntnew
 " date     : 2014年 12月19日 金曜日 22時13分53秒 JST
+" Launch Config {{{
+set nocompatible
+call pathogen#infect()
+execute pathogen#helptags()
+" }}}
 
 " Color Schema {{{
 syntax enable         " enable syntax processing
-set background=dark   " using solarized dark background
+if has('gui_running')
+    set background=light
+else
+    set background=dark
+endif
 colorscheme solarized " using solarized colorschema
 " }}}
 " Misc {{{
@@ -85,24 +94,51 @@ vmap <C-v> <Plug>(expand_region_shrink)
 inoremap jk <esc>
 " }}}
 " Powerline {{{
+" Current using vim-airline!
 "set encoding=utf-8
 "python from powerline.vim import setup as powerline_setup
 "python powerline_setup()
 "python del powerline_setup
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-set laststatus=2
+"let g:airline#extensions#tabline#left_sep = ' '
+"let g:airline#extensions#tabline#left_alt_sep = '|'
+"let g:airline_left_sep = ''
+"let g:airline_left_alt_sep = ''
+"let g:airline_right_sep = ''
+"let g:airline_right_alt_sep = ''
+"set laststatus=2
 " }}}
+
+" Vim-AirLine {{{
+let g:airline_theme='light'
+set laststatus=2
+let g:airline_mode_map = {
+  \ '__' : '-',
+  \ 'n'  : 'N',
+  \ 'i'  : 'I',
+  \ 'R'  : 'R',
+  \ 'c'  : 'C',
+  \ 'v'  : 'V',
+  \ 'V'  : 'V',
+  \ '^V' : 'V',
+  \ 's'  : 'S',
+  \ 'S'  : 'S',
+  \ '^S' : 'S',
+  \ }
+  
+let g:airline_powerline_fonts=0
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+let g:airline_symbols.space = "\ua0"
+"}}}
+
 " CtrlP {{{
 let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_custom_ignore = '\vbuild/|dist/|venv/|target/|\.(o|swp|pyc|egg)$'
 " }}}
+
 " NERDTree {{{
 let NERDTreeIgnore = ['\.pyc$', 'build', 'venv', 'egg', 'egg-info/', 'dist', 'docs']
 " }}}
@@ -110,10 +146,7 @@ let NERDTreeIgnore = ['\.pyc$', 'build', 'venv', 'egg', 'egg-info/', 'dist', 'do
 let g:syntastic_python_flake8_args='--ignore=E501'
 let g:syntastic_ignore_files = ['.java$']
 " }}}
-" Launch Config {{{
-set nocompatible
-call pathogen#infect()
-" }}}
+
 "" Tmux {{{
 "if exists('$TMUX') " allows cursor change in tmux mode
 "    let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
