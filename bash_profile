@@ -1,3 +1,6 @@
+# Set locale
+export LANG="ja_JP.UTF-8"
+export LC_CTYPE="ja_JP.UTF-8"
 
 # Add Homebrew `/usr/local/bin` and User `~/bin` to the `$PATH`
 PATH=/usr/local/bin:$PATH
@@ -15,7 +18,6 @@ unset file
 # Add enviroment varible for vhost
 export vhost=vagrant@vdev.com
 
-# qE$W4$f6'
 alias gw='ssh nguyentdung@172.19.1.191'
 alias mazii='ssh dungntnew@128.199.226.39'
 alias mplayer='mplayer -loop 0'
