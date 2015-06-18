@@ -12,21 +12,24 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 done
 unset file
 
-# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-export COCOS_CONSOLE_ROOT=/Users/dungntnew/Frameworks/cocos2d-x-3.3/tools/cocos2d-console/bin
-export PATH=$COCOS_CONSOLE_ROOT:$PATH
-
-# Add environment variable COCOS_X_ROOT for cocos2d-x
-export COCOS_X_ROOT=/Users/dungntnew/Frameworks/cocos2d-x-3.3
-export PATH=$COCOS_X_ROOT:$PATH
-
-# Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
-export COCOS_TEMPLATES_ROOT=/Users/dungntnew/Frameworks/cocos2d-x-3.3/templates
-export PATH=$COCOS_TEMPLATES_ROOT:$PATH
-
-# Add enviroment variable for kindlegen
-export KINDLEGEN=/Users/dungntnew/Setup/KindleGen_Mac_i386_v2_9
-export PATH=$KINDLEGEN:$PATH
-
 # Add enviroment varible for vhost
 export vhost=vagrant@vdev.com
+
+# qE$W4$f6'
+alias gw='ssh nguyentdung@172.19.1.191'
+alias mazii='ssh dungntnew@128.199.226.39'
+alias mplayer='mplayer -loop 0'
+code () {
+	if [[ $# = 0 ]]
+	then
+		open -a "Visual Studio Code"
+	else
+		[[ $1 = /* ]] && F="$1" || F="$PWD/${1#./}"
+		open -a "Visual Studio Code" --args "$F"
+	fi
+}
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+# User specific environment and startup programs
+export PATH=$PATH:$HOME/bin
