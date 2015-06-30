@@ -20,6 +20,9 @@ alias lsd='ls -l | grep "^d"'
 # List all files as tree
 alias dir="tree"
 
+# list all files with info
+alias dir='ls -FaGl'
+
 # go to ssh server
 alias mazii='ssh dungtnnew@128.199.226.39'
 
