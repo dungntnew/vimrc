@@ -11,7 +11,7 @@
                 {"command": "repl_open", 
                  "caption": "Shell",
                  "id": "repl_shell",
-                 "mnemonic": "s",
+                 "mnemonic": ">",
                  "args": {
                     "type": "subprocess",
                     "encoding": {"windows": "$win_cmd_encoding",
@@ -25,7 +25,7 @@
                     "env": {},
                     "suppress_echo": true, 
                     "external_id": "shell",
-                    "syntax": "Packages/Text/Plain text.tmLanguage"
+                    "syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
                     }
                 }
             ]   
