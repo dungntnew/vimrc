@@ -26,6 +26,9 @@ export vhost=vagrant@vdev.com
 alias gw='ssh nguyentdung@172.19.1.191'
 alias mazii='ssh dungntnew@128.199.226.39'
 alias mplayer='mplayer -loop 0'
+alias c='pbcopy'
+alias p='pbpaste'
+
 code () {
 	if [[ $# = 0 ]]
 	then
@@ -40,3 +43,7 @@ code () {
 export PATH="/usr/local/heroku/bin:$PATH"
 # User specific environment and startup programs
 export PATH=$PATH:$HOME/bin
+
+
+# vagran
+alias vhost='cd ~/vdev/ && vagrant ssh'

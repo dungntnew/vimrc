@@ -1,0 +1,10 @@
+{
+	"executable": "/usr/local/bin/python -m virtualenv",
+	"extra_paths":
+	[
+	],
+	"virtualenv_directories":
+	[
+		"/Users/dungntnew/vdev/.virtualenvs",
+	]
+}

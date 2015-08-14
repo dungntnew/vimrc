@@ -1,0 +1,14 @@
+[
+  { "keys": ["cmd+n"], "command": "advanced_new_file_new"},
+  { "keys": ["super+shift+a"], "command": "alignment" },
+
+
+  {
+  	"keys": ["ctrl+t"], "command": "run_existing_window_command", "args":
+		{
+			"id": "repl_shell",
+			"file": "config/Shell/Main.sublime-menu"
+		}
+	}
+
+]

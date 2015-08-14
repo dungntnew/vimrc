@@ -1,0 +1,35 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Alignment",
+		"Anaconda",
+		"Color Scheme - Baara Dark",
+		"Dayle Rees Color Schemes",
+		"Deep Blue See",
+		"DocBlockr",
+		"Emmet",
+		"FileDiffs",
+		"Git",
+		"GitGutter",
+		"Markdown Preview",
+		"Package Control",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-csslint",
+		"SublimeLinter-html-tidy",
+		"SublimeLinter-jshint",
+		"SublimeLinter-json",
+		"SublimeLinter-pep8",
+		"SublimeLinter-pyflakes",
+		"SublimeLinter-pyyaml",
+		"SublimeREPL",
+		"Terminal",
+		"Theme - Soda",
+		"Theme - Soda SolarizedDark",
+		"Virtualenv"
+	]
+}
