@@ -1,9 +1,11 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
 	"installed_packages":
 	[
+		"Advanced CSV",
 		"AdvancedNewFile",
 		"Alignment",
 		"Anaconda",
@@ -12,12 +14,19 @@
 		"Deep Blue See",
 		"DocBlockr",
 		"Emmet",
+		"Expand Tabs on Save",
 		"FileDiffs",
 		"Git",
 		"GitGutter",
+		"GoSublime",
+		"HTMLBeautify",
+		"JsFormat",
+		"JSON Reindent",
 		"Markdown Preview",
 		"Package Control",
+		"Python PEP8 Autoformat",
 		"SideBarEnhancements",
+		"SQLExec",
 		"SublimeLinter",
 		"SublimeLinter-csslint",
 		"SublimeLinter-html-tidy",
@@ -27,9 +36,11 @@
 		"SublimeLinter-pyflakes",
 		"SublimeLinter-pyyaml",
 		"SublimeREPL",
+		"SyntaxFold",
 		"Terminal",
 		"Theme - Soda",
 		"Theme - Soda SolarizedDark",
+		"TrailingSpaces",
 		"Virtualenv"
 	]
 }

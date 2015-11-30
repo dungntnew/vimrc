@@ -6,6 +6,8 @@
 	],
 	"auto_complete": false,
 	"color_scheme": "Packages/User/SublimeLinter/Deep Blue See (SL).tmTheme",
+	"convert_tabspaces_on_save": true,
+	"font_size": 17,
 	"ignored_packages":
 	[
 		"Vintage"

@@ -94,21 +94,30 @@ else
 fi
 
 # install Powerline fonts support for airline
-if [ ! -d /tmp/powerline_fonts ]; then
-	cd /tmp/ && git clone git@github.com:powerline/fonts.git powerline_fonts
-	cd powerline_fonts && sh install.sh 
-	echo "[successfully installed] powerline fonts"
-else
-	echo "[already installed] ~/.vim/bundle/vim-fugitive.vim "
-fi
+#if [ ! -d /tmp/powerline_fonts ]; then
+#	cd /tmp/ && git clone git@github.com:powerline/fonts.git powerline_fonts
+#	cd powerline_fonts && sh install.sh 
+#	echo "[successfully installed] powerline fonts"
+#else
+#	echo "[already installed] ~/.vim/bundle/vim-fugitive.vim "
+#fi
 
 # install ctrlp
 if [ ! -d ~/.vim/bundle/ctrlp.vim ]; then
+	cd ~/.vim/bundle && git clone https://github.com/fatih/vim-go.git
+	echo "[successfully installed] ~/.vim/bundle/vim-go.vim"
+else
+	echo "[already installed] ~/.vim/bundle/vim-go.vim"
+fi
+
+# install vim-go
+if [ ! -d ~/.vim/bundle/vim-go.vim ]; then
 	cd ~/.vim/bundle && git clone https://github.com/kien/ctrlp.vim.git
 	echo "[successfully installed] ~/.vim/bundle/ctrlp.vim"
 else
 	echo "[already installed] ~/.vim/bundle/ctrlp.vim"
 fi
+
 
 echo "			INSTALL VIMRC	-	END	-						"
 echo "----------------------------------------------------------"

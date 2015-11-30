@@ -9,12 +9,12 @@ execute pathogen#helptags()
 
 " Color Schema {{{
 syntax enable         " enable syntax processing
-if has('gui_running')
-    set background=light
-else
-    set background=dark
-endif
-colorscheme solarized " using solarized colorschema
+""if has('gui_running')
+"    set background=light
+"else
+"    set background=dark
+"endif
+"colorscheme solarized " using solarized colorschema
 " }}}
 " Misc {{{
 set ttyfast                     " faster redraw
@@ -173,7 +173,7 @@ augroup configgroup
     autocmd FileType python setlocal tabstop=2
     autocmd FileType python setlocal shiftwidth=2
     autocmd FileType python setlocal softtabstop=2
-autocmd BufEnter *.cls setlocal filetype=java
+    autocmd BufEnter *.cls setlocal filetype=java
     autocmd BufEnter *.zsh-theme setlocal filetype=zsh
     autocmd BufEnter Makefile setlocal noexpandtab
     autocmd BufEnter *.sh setlocal tabstop=2

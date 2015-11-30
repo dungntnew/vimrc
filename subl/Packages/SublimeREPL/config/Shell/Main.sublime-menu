@@ -4,14 +4,14 @@
         "children":
         [{
             "caption": "SublimeREPL",
-            "mnemonic": "r",
+            "mnemonic": "R",
             "id": "SublimeREPL",
             "children":
             [
                 {"command": "repl_open", 
                  "caption": "Shell",
                  "id": "repl_shell",
-                 "mnemonic": ">",
+                 "mnemonic": "S",
                  "args": {
                     "type": "subprocess",
                     "encoding": {"windows": "$win_cmd_encoding",
@@ -25,7 +25,7 @@
                     "env": {},
                     "suppress_echo": true, 
                     "external_id": "shell",
-                    "syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+                    "syntax": "Packages/Text/Plain text.tmLanguage"
                     }
                 }
             ]   
