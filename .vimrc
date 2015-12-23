@@ -257,6 +257,17 @@ function! s:NextTextObject(motion, dir)
  
   exe "normal! ".a:dir.c."v".a:motion.c
 endfunction
+
+" }}}
+
+" {{{ setting dbtext use for airlink
+let dbext_default_profile=""
+let dbext_default_type="MYSQL"
+let dbext_default_user="sgdba"
+let dbext_default_passwd="sgdba"
+let dbext_default_dbname="sigdb"
+let dbext_default_host="hdp1"
+let dbext_default_buffer_lines=20
 " }}}
 
 " vim:foldmethod=marker:foldlevel=0 

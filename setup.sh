@@ -22,6 +22,14 @@ else
 	echo "[already installed] ~/.vim/bundle/vim-colors-solarized"
 fi
 
+# install dbext.vim
+if [ ! -d ~/.vim/bundle/dbext.vim ]; then
+	cd ~/.vim/bundle && git clone git@github.com:vim-scripts/dbext.vim.git
+	echo "[successfully installed] ~/.vim/bundle/dbext.vim"
+else
+	echo "[already installed] ~/.vim/bundle/dbext.vim"
+fi
+
 # install nerdtree.vim
 if [ ! -d ~/.vim/bundle/nerdtree ]; then
 	cd ~/.vim/bundle && git clone https://github.com/scrooloose/nerdtree.git
