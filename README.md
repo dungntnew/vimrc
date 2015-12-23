@@ -17,12 +17,6 @@ $ if [ -e ~/.vimrc ]; then  rm ~/.vimrc; fi;
 $ ln -s ~/env/vimrc/.vimrc ~/.vimrc
 ```
 
-### STEP 2: Install Iterm and Theme (MacOSX only)
-![Install solarized color](https://raw.github.com/dungntnew/vimrc/master/iTerm2.png?raw=true "Editing..")
-
-- Download and install iTerm from (https://www.iterm2.com/)
-- Open iTerm 2 -> open Preferences -> "Profiles" -> "colors" tab ->"load presets" and select "import...". Select the Solarized Light or Dark theme file form ~/env/vimrc/colors-solarized
-
 ### Usage
 - Syntax check multi-lang: , + c
 - Search file in folder: Ctrl + p
