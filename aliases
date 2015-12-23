@@ -23,9 +23,6 @@ alias dir="tree"
 # list all files with info
 alias dir='ls -FaGl'
 
-# go to ssh server
-alias mazii='ssh dungtnnew@128.199.226.39'
-
 # git log with status
 alias gitlog='git log --stat'
 
