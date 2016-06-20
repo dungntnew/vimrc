@@ -8,8 +8,8 @@ export PATH=$PATH:$HOME/bin
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
-load_files="path,bash_prompt,exports,aliases,functions,extra, local_bash_profile"
-for file in $load_files; do
+load_files=("path bash_prompt" "exports aliases" "functions" "extra" "local_bash_profile")
+for file in ${load_files}; do
   file_path=~/.$file
   [ -r "$file_path" ] && source "$file_path"
 done
