@@ -23,3 +23,7 @@ alias p='pbpaste'
 # alias for lauchctl
 alias service='launchctl'
 
+# alias for check disk
+# list top 10 largest files
+alias top_file='du -cks * | sort -rn | head'
+
