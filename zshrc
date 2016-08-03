@@ -1,9 +1,9 @@
 # Created by newuser for 5.2
 alias ll='ls -l'
 alias g='git'
-
+fpath=(/usr/local/share/zsh-completions $fpath)
 autoload -Uz compinit
- compinit
+compinit -u
  # 補完で小文字でも大文字にマッチさせる
  zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
  # ../ の後は今いるディレクトリを補完しない
