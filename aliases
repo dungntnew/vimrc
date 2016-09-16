@@ -5,6 +5,11 @@ else # OS X `ls`
   colorflag="-G"
 fi
 
+# Memo How to
+alias howto_find='echo "find . -type d -name \"chocolate\""'
+alias howto_git_replace='echo "git grep -l \"original_text\" | xargs sed -i \"\" -e \"s/original_text/new_text/g\" "'
+alias howto_git_replace_linux='echo "git grep -l \"original_text\" | xargs sed -i \"s/original_text/new_text/g\" "'
+
 # Loop music
 alias mplayer='mplayer -loop 0'
 
