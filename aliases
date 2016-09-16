@@ -6,7 +6,7 @@ else # OS X `ls`
 fi
 
 # Memo How to
-alias howto_find='echo "find . -type d -name \"chocolate\""'
+alias howto_find='echo "find . -not -path \"./env/*\" -type d -name \"chocolate\""'
 alias howto_git_replace='echo "git grep -l \"original_text\" | xargs sed -i \"\" -e \"s/original_text/new_text/g\" "'
 alias howto_git_replace_linux='echo "git grep -l \"original_text\" | xargs sed -i \"s/original_text/new_text/g\" "'
 
