@@ -93,6 +93,16 @@ else
 	echo "[already installed] ~/.vim/bundle/vim-airline.vim "
 fi
 
+
+# install vim-airline-themes
+if [ ! -d ~/.vim/bundle/vim-airline-themes ]; then
+	cd ~/.vim/bundle && git clone https://github.com/vim-airline/vim-airline-themes
+	echo "[successfully installed] ~/.vim/bundle/vim-airline-themes.vim"
+else
+	echo "[already installed] ~/.vim/bundle/vim-airline-themes.vim "
+fi
+
+
 # install fugitive.vim support git branch in airline
 if [ ! -d ~/.vim/bundle/vim-fugitive ]; then
 	cd ~/.vim/bundle && git clone git://github.com/tpope/vim-fugitive.git

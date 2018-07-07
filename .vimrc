@@ -109,7 +109,7 @@ inoremap jk <esc>
 " }}}
 
 " Vim-AirLine {{{
-let g:airline_theme='light'
+let g:airline_theme='base16_google'
 set laststatus=2
 let g:airline_mode_map = {
   \ '__' : '-',
